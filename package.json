@@ -1,6 +1,6 @@
 {
   "name": "data2grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add a row and a column to a set of data so you can lay it out.",
   "main": "build/data2grid.js",
   "scripts": {
