@@ -1,0 +1,40 @@
+{
+  "name": "data2grid",
+  "version": "0.0.1",
+  "description": "Add a row and a column to a set of data so you can lay it out.",
+  "main": "build/data2grid.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "minify": "uglifyjs build/data2grid.js --preamble \"$(preamble)\" -c -m -o build/data2grid.min.js",
+    "rollup": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" index.js --output.format umd --name 'data2grid' --output.file build/data2grid.js",
+    "build": "npm run rollup && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryStevens/data2grid.git"
+  },
+  "keywords": [
+    "data",
+    "grid",
+    "layout"
+  ],
+  "author": {
+    "name": "Harry Stevens",
+    "url": "https://harryjstevens.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HarryStevens/data2grid/issues"
+  },
+  "homepage": "https://github.com/HarryStevens/data2grid#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "package-preamble": "^0.1.0",
+    "rollup": "^0.52.0",
+    "uglifyjs": "^2.4.11"
+  }
+}

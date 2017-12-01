@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script src="../build/data2grid.min.js"></script>
+		<script>
+		function makeData(){
+			var data = [];
+			for ( var i = 1; i <= 12; i++ ){
+				data.push( { id: i } );
+			}
+			return data;	
+		}
+
+		console.log(data2grid.grid(makeData()));
+		console.log(data2grid.grid(makeData(), 2));
+		console.log(data2grid.grid(makeData(), 6));
+		console.log(data2grid.grid(makeData(), 5));
+
+		</script>
+	</body>
+</html>
