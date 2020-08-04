@@ -17,8 +17,8 @@ var data2grid = require("data2grid");
 
 In vanilla, a `data2grid` global is exported. You can use the CDN from unpkg.
 ```html
-<script src="https://unpkg.com/data2grid@1.0.1/build/data2grid.js"></script>
-<script src="https://unpkg.com/data2grid@1.0.1/build/data2grid.min.js"></script>
+<script src="https://unpkg.com/data2grid@1.0.2/build/data2grid.js"></script>
+<script src="https://unpkg.com/data2grid@1.0.2/build/data2grid.min.js"></script>
 ```
 If you'd rather host it yourself, download `data2grid.js` or `data2grid.min.js` from the [`build` directory](https://github.com/HarryStevens/data2grid/tree/master/build).
 ```html
