@@ -4,7 +4,7 @@ export default function calcRows(number){
   // errors
 
   // the number argument is not declared
-  if (!number) {
+  if (number != null && isFinite(number)) {
     throw new Error("You must pass a number.");
   }
 
